@@ -37,21 +37,6 @@ body{
     display: none;
 }
 
-.title{
-    font-size: var(--lg);
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.subtitle{
-    color: var(--Very-light-pink);
-    font-size: var(--md);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 .label{
     font-size: var(--sm);
     font-weight: bold;
@@ -66,6 +51,7 @@ body{
     font-size: var(--md);
     padding: 5px;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 .form{
@@ -73,26 +59,14 @@ body{
     flex-direction: column;
 }
 
-.label{
+.form a{
+    color: var(--Hospital-green);
     font-size: var(--sm);
-    font-weight: bold;
-    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 55px;
 }
 
-.input{
-    background-color: var(--Text-input-field);
-    border: none;
-    border-radius: 8px;
-    height: 30px;
-    font-size: var(--md);
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-}
 
 .primary-btn{
     background-color: var(--Hospital-green);
@@ -111,8 +85,38 @@ body{
     margin-bottom: 20px;
 }
 
+.resend{
+    font-size: var(--sm);
+}
+
+.resend span{
+    color: var(--Very-light-pink);
+    font-weight: 300;
+}
+
+.resend a{
+    color: var(--Hospital-green);
+    text-decoration: none;
+}
+
+.secundary-btn{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--Hospital-green);
+    color: var(--Hospital-green);
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
 @media (max-width: 640px) {
     .logo{
         display: block;
+    }
+
+    .secundary-btn{
+        margin-top: 90px;
     }
 }
