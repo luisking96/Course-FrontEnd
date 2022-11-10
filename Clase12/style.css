@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --Very-light-pink: #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.product-detail{
+    width: 359px;
+    position: absolute;
+    right: 0;
+}
+
+
+.product-detail-close{
+    background: var(--white);
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 34px;
+      left: 34px;
+      z-index: 2;
+      padding: 12px;
+      border-radius: 50%;
+    
+}
+
+.product-detail-close img:hover{
+    cursor: pointer;
+}
+
+.product-detail img:nth-child(2){
+    width: 100%;
+    height: 359px;
+    border-radius: 0 0 13px 13px;
+}
+
+.produc-info{
+    margin: 24px 24px 0 24px;
+}
+
+.produc-info p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.produc-info p:nth-child(2){
+    color: var(--Very-light-pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.produc-info p:nth-child(3){
+    color: var(--Very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.primary-btn{
+    background-color: var(--Hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--black);
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.add-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .product-detail{
+        width: 100%;
+    }
+}
